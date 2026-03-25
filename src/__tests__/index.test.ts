@@ -182,7 +182,7 @@ describe("MCP Server Integration", () => {
 
       expect(McpServer).toHaveBeenCalledWith({
         name: "teams-mcp",
-        version: "0.8.0",
+        version: "0.0.1",
       });
 
       // Should register all tool categories
