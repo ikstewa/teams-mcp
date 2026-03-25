@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-MCP (Model Context Protocol) server that bridges AI assistants to Microsoft Teams via the Microsoft Graph API. Published as `@floriscornel/teams-mcp` on npm. Uses MSAL device-code auth with a file-based token cache (`~/.teams-mcp-token-cache.json`).
+MCP (Model Context Protocol) server that bridges AI assistants to Microsoft Teams via the Microsoft Graph API. Published as `@ikstewa/teams-mcp` on npm. Uses MSAL device-code auth with a file-based token cache (`~/.teams-mcp-token-cache.json`).
 
 ## Architecture
 

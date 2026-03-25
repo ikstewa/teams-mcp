@@ -176,7 +176,7 @@ async function logout() {
   }
 
   console.log("✅ Successfully logged out");
-  console.log("🔄 Run 'npx @floriscornel/teams-mcp@latest authenticate' to re-authenticate");
+  console.log("🔄 Run 'npx @ikstewa/teams-mcp@latest authenticate' to re-authenticate");
 }
 
 // MCP Server setup
@@ -208,12 +208,12 @@ async function startMcpServer(readOnly: boolean) {
           "⚠️  Warning: You authenticated with read-only scopes but the server is running in full mode."
         );
         console.error("   Write operations may fail. Re-authenticate without --read-only:");
-        console.error("   npx @floriscornel/teams-mcp@latest authenticate");
+        console.error("   npx @ikstewa/teams-mcp@latest authenticate");
       } else if (!grantedScopes) {
         console.error(
           "⚠️  Warning: Could not determine granted scopes. If you experience permission errors,"
         );
-        console.error("   re-authenticate: npx @floriscornel/teams-mcp@latest authenticate");
+        console.error("   re-authenticate: npx @ikstewa/teams-mcp@latest authenticate");
       }
     }
   }
@@ -257,19 +257,19 @@ async function main() {
       console.log("");
       console.log("Usage:");
       console.log(
-        "  npx @floriscornel/teams-mcp@latest authenticate              # Authenticate with full scopes"
+        "  npx @ikstewa/teams-mcp@latest authenticate              # Authenticate with full scopes"
       );
       console.log(
-        "  npx @floriscornel/teams-mcp@latest authenticate --read-only  # Authenticate with read-only scopes"
+        "  npx @ikstewa/teams-mcp@latest authenticate --read-only  # Authenticate with read-only scopes"
       );
       console.log(
-        "  npx @floriscornel/teams-mcp@latest check                     # Check authentication status"
+        "  npx @ikstewa/teams-mcp@latest check                     # Check authentication status"
       );
       console.log(
-        "  npx @floriscornel/teams-mcp@latest logout                    # Clear authentication"
+        "  npx @ikstewa/teams-mcp@latest logout                    # Clear authentication"
       );
       console.log(
-        "  npx @floriscornel/teams-mcp@latest                           # Start MCP server (default)"
+        "  npx @ikstewa/teams-mcp@latest                           # Start MCP server (default)"
       );
       console.log("");
       console.log("Environment variables:");

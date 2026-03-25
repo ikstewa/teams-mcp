@@ -1,5 +1,5 @@
 {
-  "name": "@floriscornel/teams-mcp",
+  "name": "@ikstewa/teams-mcp",
   "version": "0.8.0",
   "description": "MCP server for Microsoft Graph Teams integration",
   "type": "module",
@@ -45,11 +45,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/floriscornel/teams-mcp.git"
+    "url": "git+https://github.com/ikstewa/teams-mcp.git"
   },
-  "homepage": "https://github.com/floriscornel/teams-mcp#readme",
+  "homepage": "https://github.com/ikstewa/teams-mcp#readme",
   "bugs": {
-    "url": "https://github.com/floriscornel/teams-mcp/issues"
+    "url": "https://github.com/ikstewa/teams-mcp/issues"
   },
   "dependencies": {
     "@azure/identity": "^4.13.0",

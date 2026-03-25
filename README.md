@@ -1,15 +1,15 @@
 # Teams MCP
 
-[![npm version](https://img.shields.io/npm/v/@floriscornel/teams-mcp.svg)](https://www.npmjs.com/package/@floriscornel/teams-mcp)
-[![npm downloads](https://img.shields.io/npm/dm/@floriscornel/teams-mcp.svg)](https://www.npmjs.com/package/@floriscornel/teams-mcp)
-[![codecov](https://codecov.io/gh/floriscornel/teams-mcp/graph/badge.svg)](https://app.codecov.io/gh/floriscornel/teams-mcp)
+[![npm version](https://img.shields.io/npm/v/@ikstewa/teams-mcp.svg)](https://www.npmjs.com/package/@ikstewa/teams-mcp)
+[![npm downloads](https://img.shields.io/npm/dm/@ikstewa/teams-mcp.svg)](https://www.npmjs.com/package/@ikstewa/teams-mcp)
+[![codecov](https://codecov.io/gh/ikstewa/teams-mcp/graph/badge.svg)](https://app.codecov.io/gh/ikstewa/teams-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/floriscornel/teams-mcp.svg)](https://github.com/floriscornel/teams-mcp/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/ikstewa/teams-mcp.svg)](https://github.com/ikstewa/teams-mcp/stargazers)
 
 A Model Context Protocol (MCP) server that provides seamless integration with Microsoft Graph APIs, enabling AI assistants to interact with Microsoft Teams, users, and organizational data.
 
-<a href="https://glama.ai/mcp/servers/@floriscornel/teams-mcp">
-  <img width="380" height="200" src="https://glama.ai/mcp/servers/@floriscornel/teams-mcp/badge" alt="Teams MCP server" />
+<a href="https://glama.ai/mcp/servers/@ikstewa/teams-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@ikstewa/teams-mcp/badge" alt="Teams MCP server" />
 </a>
 
 ## 📦 Installation
@@ -21,7 +21,7 @@ To use this MCP server in Cursor/Claude/VS Code, add the following configuration
   "mcpServers": {
     "teams-mcp": {
       "command": "npx",
-      "args": ["-y", "@floriscornel/teams-mcp@latest"]
+      "args": ["-y", "@ikstewa/teams-mcp@latest"]
     }
   }
 }
@@ -268,7 +268,7 @@ The server supports a read-only mode that disables all write operations (sending
 
 **Authenticate with reduced scopes:**
 ```bash
-npx @floriscornel/teams-mcp@latest authenticate --read-only
+npx @ikstewa/teams-mcp@latest authenticate --read-only
 ```
 
 **MCP server configuration (read-only):**
@@ -277,7 +277,7 @@ npx @floriscornel/teams-mcp@latest authenticate --read-only
   "mcpServers": {
     "teams-mcp": {
       "command": "npx",
-      "args": ["-y", "@floriscornel/teams-mcp@latest"],
+      "args": ["-y", "@ikstewa/teams-mcp@latest"],
       "env": {
         "TEAMS_MCP_READ_ONLY": "true"
       }
@@ -288,7 +288,7 @@ npx @floriscornel/teams-mcp@latest authenticate --read-only
 
 **Switching modes:** When switching from read-only to full mode, the server detects the scope mismatch and warns you to re-authenticate:
 ```bash
-npx @floriscornel/teams-mcp@latest authenticate
+npx @ikstewa/teams-mcp@latest authenticate
 ```
 
 **Read-only tools (15):**
@@ -345,22 +345,22 @@ First, authenticate with Microsoft Graph:
 
 ```bash
 # Full access (default)
-npx @floriscornel/teams-mcp@latest authenticate
+npx @ikstewa/teams-mcp@latest authenticate
 
 # Read-only (reduced permission scopes)
-npx @floriscornel/teams-mcp@latest authenticate --read-only
+npx @ikstewa/teams-mcp@latest authenticate --read-only
 ```
 
 Check your authentication status:
 
 ```bash
-npx @floriscornel/teams-mcp@latest check
+npx @ikstewa/teams-mcp@latest check
 ```
 
 Logout if needed:
 
 ```bash
-npx @floriscornel/teams-mcp@latest logout
+npx @ikstewa/teams-mcp@latest logout
 ```
 
 ### Integrating with Cursor/Claude
@@ -372,7 +372,7 @@ This MCP server is designed to work with AI assistants like Claude/Cursor/VS Cod
   "mcpServers": {
     "teams-mcp": {
       "command": "npx",
-      "args": ["-y", "@floriscornel/teams-mcp@latest"]
+      "args": ["-y", "@ikstewa/teams-mcp@latest"]
     }
   }
 }
